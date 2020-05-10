@@ -129,6 +129,9 @@ Network Engineer Sr. (Lead) | Telesis | Gettysburg, PA | [Apply](https://www.car
 Staff Software Engineer, Application Development - Surgical Robotics | Stryker | Virtual, Pennsylvania | [Apply](https://www.careerbuilder.com/job/J3M6JP6TTRXTP0PT2ZT)
 
 
+----------
+## License
+- MIT License
 
 
 ## FAQ
