@@ -102,16 +102,17 @@ def remove_duplicate(csv_file):
     remove_dups_df = df.drop_duplicates(keep="first")
     return remove_dups_df.to_csv(csv_file, index=False)
 
-start_time = datetime.datetime.now()
-print("Collecting jobs...")
-start_search(job, location)
+if __name__ == '__main__':
+    start_time = datetime.datetime.now()
+    print("Collecting jobs...")
+    start_search(job, location)
 
-print("Removing duplicates")
-remove_duplicate("panda_job_data.csv")
+    print("Removing duplicates")
+    remove_duplicate("panda_job_data.csv")
 
-print("Converting data...")
-csv_to_md("panda_job_data.csv", "tech jobs")
+    print("Converting data...")
+    csv_to_md("panda_job_data.csv", "tech jobs")
 
-print("Job collection completed")
-end_time = datetime.datetime.now()
-print(f"Time elapsed: {end_time - start_time}")
+    print("Job collection completed")
+    end_time = datetime.datetime.now()
+    print(f"Time elapsed: {end_time - start_time}")

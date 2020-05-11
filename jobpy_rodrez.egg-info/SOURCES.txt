@@ -1,8 +1,0 @@
-README.md
-setup.py
-jobpy/__init__.py
-jobpy/cb_job_search.py
-jobpy_rodrez.egg-info/PKG-INFO
-jobpy_rodrez.egg-info/SOURCES.txt
-jobpy_rodrez.egg-info/dependency_links.txt
-jobpy_rodrez.egg-info/top_level.txt
