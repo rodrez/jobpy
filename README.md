@@ -4,6 +4,7 @@
 
 ![GitHub version](https://badge.fury.io/gh/rodrez%2FJobs-and-Skills.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Issues](https://img.shields.io/github/issues/rodrez/jobpy)
 
 ----------
 ## Table of Contents
