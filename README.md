@@ -30,8 +30,7 @@
     print(f"Time elapsed: {end_time - start_time}")
 ----------
 ## Installation
-- All the `code` required to get started
-- Images of what it should look like
+- Work in progress
 
 **Clone**
 
