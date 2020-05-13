@@ -4,6 +4,7 @@
 
 ![GitHub version](https://badge.fury.io/gh/rodrez%2FJobs-and-Skills.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Issues](https://img.shields.io/github/issues/rodrez/jobpy)
 
 ----------
 ## Table of Contents
@@ -29,8 +30,7 @@
     print(f"Time elapsed: {end_time - start_time}")
 ----------
 ## Installation
-- All the `code` required to get started
-- Images of what it should look like
+- Work in progress
 
 **Clone**
 
@@ -89,6 +89,8 @@ Reach out to me at one of the following places!
 - Twitter at [@Rodrez_](http://twitter.com/rodrez_)
 - Email at [fabian.rodrez@gmail.com](mailto:fabian.rodrez@gmail.com)
 ----------
+## License 
 
+- MIT License 
 
 - Copyright 2020 © Rodrez.
