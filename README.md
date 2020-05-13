@@ -89,6 +89,8 @@ Reach out to me at one of the following places!
 - Twitter at [@Rodrez_](http://twitter.com/rodrez_)
 - Email at [fabian.rodrez@gmail.com](mailto:fabian.rodrez@gmail.com)
 ----------
+## License 
 
+- MIT License 
 
 - Copyright 2020 © Rodrez.
