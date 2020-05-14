@@ -1,30 +1,19 @@
 from bs4 import BeautifulSoup
+from jobpy.files.converter import csv_to_md, add_to_csv, remove_duplicate_rows
+
 import requests
-import pandas as pd
-import csv
 import datetime
 
 job = 'software engineer'
 location = 'Mechanicsburg, PA'
 
 
-def add_to_csv(job_dict):
-    """
-    Uses pandas to convert a dictionary to a csv file.
-    :param job_dict: Dictionary
-    :return:
-    """
-    # data = job_dict
-    df = pd.DataFrame([job_dict])
-    df.to_csv('panda_job_data.csv', mode='a+', header=False, index=False)
-
-
-def grab_jobs_links(job_title, job_location):
+def grab_jobs_links(job_title: str, job_location: str):
     """
     Grabs the link for each job container and saves it to saved_jobs
     Removes the sign in link to avoid signing in to the CB page.
-    :param job_title: str -> desired job to be searched
-    :param job_location: str -> desired location to be searched
+    :param job_title: str  desired job to be searched
+    :param job_location: str  desired location to be searched
     :return: List of job links
     """
     web = requests.get(
@@ -39,39 +28,41 @@ def grab_jobs_links(job_title, job_location):
     saved_jobs = []
 
     for idx, jobs in enumerate(job_containers):
-        # CB has a required signing link and we use the replace method to bypass it.
+        # CB requires the user to be signed in to see jobs. We use the replace method to bypass it.
         saved_jobs.append(f'{job_containers[idx].a.get("href", None).replace(sign_in_url, "")}')
 
     return saved_jobs
 
 
-def get_job_information(url):
+def get_job_information(url: str) -> object:
     """
     Uses bs4 to grab the information from each job container based on the url.
-    :param url: career builder url of any job
+    :param url: str - career builder url of any job ("url")
     :return: A dictionary containing Job Name, Company Name, Job Location, Description, Skills and apply link.
     """
     website = requests.get(url).text
     job_soup = BeautifulSoup(website, 'html.parser')
 
-
     job_name = job_soup.select('.dib-m > h1')[0].getText()
     company_name = job_soup.select('.data-details > span:nth-child(1)')[0].getText()
     job_location = job_soup.select('.data-details > span:nth-child(2)')[0].getText()
+
     job_description = job_soup.select('#jdp_description > div.col-2 > div.col.big.col-mobile-full > p')
+    job_description_2 = job_soup.select('#jdp_description > div:nth-child(1) > div:nth-child(1)')
 
     desc = []
     for idx, paragraph in enumerate(job_description):
         desc.append(job_description[idx].text)
 
-    job_skills = []
+    if len(desc) == 0:
+        for idx, paragraph in enumerate(job_description_2):
+            desc.append(job_description_2[idx].text)
 
-    # Loop and get skills recommended
-    skills_container = job_soup.select("#jdp_description > div.col-2 > div.col.big.col-mobile-full > div:nth-child(7) > div")
+    job_skills = []
+    skills_container = job_soup.findAll("div", {"class": "check-bubble"})
+
     for idx, skill in enumerate(skills_container):
         job_skills.append(skills_container[idx].text)
-
-
 
     job_data = {'Job Title': job_name,
                 'Company': company_name,
@@ -85,39 +76,16 @@ def get_job_information(url):
 
 # Loops through each link in saved_jobs and use the job_information function to add
 # the data to a csv file. Counter is to create an id for the items in the csv file.
-def start_search(job, location):
+def start_search(job: str, location: str):
+    """
+
+    :param job: str Desired job title ("software engineer")
+    :param location: str Desired job location ("Silicon Valley")
+    :return:
+    """
     for jobs in grab_jobs_links(job, location):
         add_to_csv(get_job_information(jobs))
 
-
-def csv_to_md(file_to_convert, filename):
-    """
-    :param file_to_convert: str -> path or filename. Must be csv file
-    :param filename: str -> Pass the filename without the extension
-    :return: An md file with the csv data converted to an md table.
-    """
-    with open(f'{filename}.md', 'w+') as file:
-        file.write(f'Job Title | Company | Location | Description | Skills | Application Url \n'
-                   f'------------ | ------------- | ------------ | ------------ | ------------ | -----\n')
-
-    with open(file_to_convert, "r")as job_details:
-        reader = csv.reader(job_details)
-        for idx, row in enumerate(reader):
-            if idx >= 0:
-                # print(idx, row)
-                with open(f'{filename}.md', 'a+') as jobs:
-                    jobs.write(f"{row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | [Apply]({row[5]})\n")
-
-
-def remove_duplicate(csv_file):
-    """
-    Removes the duplicates from a csv file
-    :param csv_file: csv file with extension
-    :return:
-    """
-    df = pd.read_csv(csv_file)
-    remove_dups_df = df.drop_duplicates(keep="first")
-    return remove_dups_df.to_csv(csv_file, index=False)
 
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
@@ -125,7 +93,7 @@ if __name__ == '__main__':
     start_search(job, location)
 
     print("Removing duplicates")
-    remove_duplicate("panda_job_data.csv")
+    remove_duplicate_rows("panda_job_data.csv")
 
     print("Converting data...")
     csv_to_md("panda_job_data.csv", "tech jobs")
