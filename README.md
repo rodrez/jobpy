@@ -6,6 +6,10 @@
 ![GitHub issues](https://img.shields.io/github/issues/rodrez/jobpy)
 ![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python Version](https://img.shields.io/pypi/pyversions/jobpy)
+![GitHub Followers](https://img.shields.io/github/followers/rodrez?style=social)
+![Twitter Followers](https://img.shields.io/twitter/follow/rodrez_?style=social)
+![Maintain](https://img.shields.io/maintenance/yes/2020)
+
 
 
 ----------
