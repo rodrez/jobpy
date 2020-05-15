@@ -3,8 +3,8 @@
 > A job search tool that will help the users find a job that suit their skills. 
 
 ![GitHub version](https://badge.fury.io/gh/rodrez%2FJobs-and-Skills.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Issues](https://img.shields.io/github/issues/rodrez/jobpy)
+![GitHub issues](https://img.shields.io/github/issues/rodrez/jobpy)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)]
 
 ----------
 ## Table of Contents
@@ -89,8 +89,6 @@ Reach out to me at one of the following places!
 - Twitter at [@Rodrez_](http://twitter.com/rodrez_)
 - Email at [fabian.rodrez@gmail.com](mailto:fabian.rodrez@gmail.com)
 ----------
-## License 
 
-- MIT License 
 
 - Copyright 2020 © Rodrez.

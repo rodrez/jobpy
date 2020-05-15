@@ -1,12 +1,14 @@
 import setuptools
-from distutils.core import setup
+
+with open("jobpy/_version.py") as f:
+    __version__ = f.read()
 
 with open("README.md", "r", encoding="utf8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="jobpy", # Replace with your own username
-    version="0.0.6",
+    version=__version__[15:-1], # Grabas the version from _version.py
     author="Fabian Rodriguez",
     license = "MIT",
     author_email="fabian.rodrez@gmail.com",

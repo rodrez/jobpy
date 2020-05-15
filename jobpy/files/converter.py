@@ -1,9 +1,9 @@
 import csv
 import pandas as pd
 
-def csv_to_md(file_to_convert, filename):
+def csv_to_md(file_to_convert: str, filename: str):
     """
-    :param file_to_convert: str -> path or filename. Must be csv file
+    :param file_to_convert: str path or filename. Must be csv file
     :param filename: str -> Pass the filename without the extension
     :return: An md file with the csv data converted to an md table.
     """
@@ -20,18 +20,19 @@ def csv_to_md(file_to_convert, filename):
                     jobs.write(f"{row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | [Apply]({row[5]})\n")
 
 
-def add_to_csv(job_dict):
+def add_to_csv(job_dict, file_name: str):
     """
     Uses pandas to convert a dictionary to a csv file.
     :param job_dict: Dictionary
+    :param file_name: name of the csv to be created
     :return:
     """
     # data = job_dict
     df = pd.DataFrame([job_dict], columns=['Job Title', 'Company', 'Location', 'Description', 'Skills', "Application Url"])
-    df.to_csv('panda_job_data.csv', mode='a+', header=False, index=False)
+    df.to_csv(f'{file_name}.csv', mode='a+', header=False, index=False)
 
 
-def remove_duplicate_rows(csv_file):
+def remove_duplicate_rows(csv_file: str):
     """
     Removes the duplicates from a csv file
     :param csv_file: csv file with extension

@@ -2,9 +2,13 @@ README.md
 setup.cfg
 setup.py
 jobpy/__init__.py
-jobpy/cb_job_search.py
+jobpy/_version.py
 jobpy.egg-info/PKG-INFO
 jobpy.egg-info/SOURCES.txt
 jobpy.egg-info/dependency_links.txt
 jobpy.egg-info/requires.txt
 jobpy.egg-info/top_level.txt
+jobpy/files/__init__.py
+jobpy/files/converter.py
+jobpy/search/__init__.py
+jobpy/search/cb_job_search.py
