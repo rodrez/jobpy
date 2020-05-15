@@ -34,22 +34,14 @@
 
 **Clone**
 
-- Clone this repo to your local machine using `https://github.com/rodrez/Jobs-and-Skills`
+- Clone this repo to your local machine using `https://github.com/rodrez/jobpy`
 
 **Requirements**
 
-- In order to run the Job Tool we need the following libraries:
-> install request first
+- In order to run the Job Tool we need the following:
+> Python 3.7+
 
-    `pip install requests`
-    
-> now install BeautifulSoup4 
 
-    `pip install beautifulsoup4`
-    
-> install request pandas
-
-    `pip install pandas`
 ----------
 ## Features
 - Work in progress
