@@ -10,7 +10,9 @@
 ![Twitter Followers](https://img.shields.io/twitter/follow/rodrez_?style=social)
 ![Maintain](https://img.shields.io/maintenance/yes/2020)
 
-
+## Currently Working on...
+----------
+Replacing beautifulsoup4 with scrappy to increase performance.
 
 ----------
 ## Table of Contents
