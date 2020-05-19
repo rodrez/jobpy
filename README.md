@@ -13,6 +13,7 @@
 ## Currently Working on...
 ----------
 Replacing beautifulsoup4 with scrappy to increase performance.
+> Progress: Apple and Microsoft jobs are passing the test. Next will be Netflix.
 
 ----------
 ## Table of Contents
@@ -48,6 +49,8 @@ Replacing beautifulsoup4 with scrappy to increase performance.
 
 - In order to run the Job Tool we need the following:
 > Python 3.7+
+> Splash
+> Docker
 
 
 ----------
