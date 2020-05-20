@@ -13,7 +13,7 @@
 ## Currently Working on...
 ----------
 Replacing beautifulsoup4 with scrappy to increase performance.
-> Progress: Apple and Microsoft jobs are passing the test. Next will be Netflix.
+> Progress: Apple, Amazon and Microsoft jobs are passing the test. Next will be Netflix.
 
 ----------
 ## Table of Contents
