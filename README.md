@@ -49,7 +49,9 @@ Replacing beautifulsoup4 with scrappy to increase performance.
 
 - In order to run the Job Tool we need the following:
 > Python 3.7+
+
 > Splash
+
 > Docker
 
 
