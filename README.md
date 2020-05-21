@@ -22,12 +22,9 @@
   <h3 align="center">Jobpy</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
     <br />
   <a href="https://github.com/rodrez/jobpy/blob/master/README.md#Documentation"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    ·
     <a href="https://github.com/rodrez/jobpy/issues">Report Bug</a>
     ·
     <a href="https://github.com/rodrez/jobpy/issues">Request Feature</a>
