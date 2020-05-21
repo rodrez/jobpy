@@ -1,3 +1,45 @@
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+![Version](https://badge.fury.io/gh/rodrez%2FJobs-and-Skills.svg)
+![Issues](https://img.shields.io/github/issues/rodrez/jobpy)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python Version](https://img.shields.io/pypi/pyversions/jobpy)
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/rodrez/jopby">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Jobpy</h3>
+
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    ·
+    <a href="https://github.com/rodrez/jobpy/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/rodrez/jobpy/issues">Request Feature</a>
+  </p>
+</p>
+
+
+
+
+
 Jobpy
 ========
 
@@ -9,10 +51,6 @@ The idea behind is was to analyze the different characteristics of the job posti
 skills required, experience, etc. It can also be used to apply to the search jobs although
 the fetaure has not been released yet.
 
-![GitHub version](https://badge.fury.io/gh/rodrez%2FJobs-and-Skills.svg)
-![GitHub issues](https://img.shields.io/github/issues/rodrez/jobpy)
-![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Python Version](https://img.shields.io/pypi/pyversions/jobpy)
 
 Look how easy it is to use:
 
