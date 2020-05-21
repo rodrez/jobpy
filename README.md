@@ -24,7 +24,7 @@
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
-  <a href="[](#Documentation)"><strong>Explore the docs »</strong></a>
+  <a href="https://github.com/rodrez/jobpy/blob/master/README.md#Documentation"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     ·
