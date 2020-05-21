@@ -29,13 +29,12 @@ Look how easy it is to use:
 Table of Contents
 -----------------
 
-- [Installation](#Installation)
 - [Features](#Features)
+- [Installation](#Installation)
+- [FAQS](#FAQS)
 - [Contributing](#Contributing)
-- [FAQ](#FAQ)
 - [Support](#Support)
-
-
+- [License](#License)
 
 Features
 --------
@@ -60,6 +59,10 @@ At the command line::
 
 FAQS
 ----
+
+- Issue Tracker: github.com/rodrez/jobpy/issues
+- Source Code: github.com/rodrez/jobpy
+
 
 1. How do we performed the search.
 
@@ -86,7 +89,7 @@ Contributing
 - **Option 1**
     - 🍴 Fork this repo!
 - **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/rodrez/Jobs-and-Skills.git`
+    - 👯 Clone this repo to your local machine using `https://github.com/rodrez/jobpy.git`
 
 **Step 2**
 
@@ -94,7 +97,7 @@ Contributing
 
 **Step 3**
 
-- 🔃 Create a new pull request using `[https://github.com/rodrez/Jobs-and-Skills/compare/](https://github.com/rodrez/Jobs-and-Skills/compare/)`.
+- 🔃 Create a new pull request using `[https://github.com/rodrez/jobpy/compare/](https://github.com/rodrez/jobpy/compare/)`.
 
 >>>>
 
