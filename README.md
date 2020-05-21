@@ -23,7 +23,7 @@
 <br />
   
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Welcome to jobpy!
     <br />
     <a href="https://github.com/rodrez/jobpy/blob/master/README.md#Documentation"><strong>Explore the docs »</strong></a>
     <br />
