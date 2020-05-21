@@ -1,70 +1,94 @@
+.. jobpy documentation master file, created by
+   sphinx-quickstart on Wed May 20 21:43:19 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-# Job Search Tool
-> A job search tool that will help the users find a job that suit their skills. 
+Welcome to jobpy's documentation!
+=================================
+Jobpy
+========
+
+What is Jobpy?
+--------------
+
+Jobpy is a library built with Python to pull job posting from all over the internet.
+The idea behind is was to analyze the different characteristics of the job posting, like
+skills required, experience, etc. It can also be used to apply to the search jobs although
+the fetaure has not been released yet.
 
 ![GitHub version](https://badge.fury.io/gh/rodrez%2FJobs-and-Skills.svg)
+
 ![GitHub issues](https://img.shields.io/github/issues/rodrez/jobpy)
+
 ![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ![Python Version](https://img.shields.io/pypi/pyversions/jobpy)
-![GitHub Followers](https://img.shields.io/github/followers/rodrez?style=social)
-![Twitter Followers](https://img.shields.io/twitter/follow/rodrez_?style=social)
-![Maintain](https://img.shields.io/maintenance/yes/2020)
 
-## Currently Working on...
-----------
-Replacing beautifulsoup4 with scrappy to increase performance.
-> Progress: Apple, Amazon and Microsoft jobs are passing the test. Next will be Netflix.
+Look how easy it is to use:
 
-----------
-## Table of Contents
+>>>>
+
+>>>
+[In]: from jobpy.search import cb_job_search as cb
+[In]: jobs_in_la = cb.start_search('software developer', 'Los Angeles')
+[In]: print(jobs_la)
+[Out]: 'software_developer_job_los_angeles.csv
+
+>>>>
+
+Table of Contents
+_________________
 - [Installation](#Installation)
 - [Features](#Features)
 - [Contributing](#Contributing)
 - [FAQ](#FAQ)
 - [Support](#Support)
-----------
-## Code Example
-    start_time = datetime.datetime.now()
-    print("Collecting jobs...")
-    start_search(job, location)
-    
-    print("Removing duplicates")
-    remove_duplicate("panda_job_data.csv")
-    
-    print("Converting data...")
-    csv_to_md("panda_job_data.csv", "tech jobs")
-    
-    print("Job collection completed")
-    end_time = datetime.datetime.now()
-    print(f"Time elapsed: {end_time - start_time}")
-----------
-## Installation
-- Work in progress
-
-**Clone**
-
-- Clone this repo to your local machine using `https://github.com/rodrez/jobpy`
-
-**Requirements**
-
-- In order to run the Job Tool we need the following:
-> Python 3.7+
-
-> Splash
-
-> Docker
 
 
-----------
-## Features
-- Work in progress
-## Usage 
-- Work in progress
-## Documentation 
-- Work in progress
-----------
-## Contributing
-> To get started...
+
+Features
+--------
+
+- Easy Job Search
+- Great Performance
+- Export to CSV or MD Table
+- Organized data
+- File converter support
+- Apply to jobs easily
+
+>>>>
+
+Installation
+------------
+
+At the command line::
+
+    pip install jobpy
+
+>>>>
+
+FAQS
+----
+
+1. How do we performed the search.
+
+   - I used Scrapy, Beutiful Soup to perform the search.
+
+2. How often does jopby gets updated?
+
+   - I am currently releasing weekly updates.
+   - NOTE: I'm currently a full time employee and part time student so I spend the rest ofvmy free time coding to expand my knowledge. Help is always appreciated.
+
+3. Will this become something more?
+
+   - I would like this to become an Open Source website that could help developers like me find their dream job.
+
+>>>>
+
+Contributing
+------------
+
+   To get started...
 
 **Step 1**
 
@@ -80,20 +104,18 @@ Replacing beautifulsoup4 with scrappy to increase performance.
 **Step 3**
 
 - 🔃 Create a new pull request using `[https://github.com/rodrez/Jobs-and-Skills/compare/](https://github.com/rodrez/Jobs-and-Skills/compare/)`.
-----------
 
-## FAQ
-- **Work in Progress.**
-    - No problem! Just do this.
-----------
-## Support
+>>>>
 
-Reach out to me at one of the following places!
+Support
+-------
 
-- Website at [rodrez.com](http://www.rodrez.com)
-- Twitter at [@Rodrez_](http://twitter.com/rodrez_)
-- Email at [fabian.rodrez@gmail.com](mailto:fabian.rodrez@gmail.com)
-----------
+If you are having issues, please let us know.
+We have a mailing list located at: fabian.rodrez@gmail.com
 
+It's easier to reach to me on Twitter @Rodrez_
 
-- Copyright 2020 © Rodrez.
+License
+-------
+
+The project is licensed under the MIT license.
