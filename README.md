@@ -24,7 +24,7 @@
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
-    <strong>[Explore the docs »](#Documentation) </strong>
+  <a href="[](#Documentation)"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     ·
