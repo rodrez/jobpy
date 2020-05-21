@@ -79,15 +79,15 @@ Contributing
 
    To get started...
 
-- Issue Tracker: github.com/rodrez/jobpy/issues
-- Source Code: github.com/rodrez/jobpy
+- Issue Tracker: !()[github.com/rodrez/jobpy/issues]
+- Source Code: !()[github.com/rodrez/jobpy]
 
 **Step 1**
 
 - **Option 1**
     - 🍴 Fork this repo!
 - **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/rodrez/jobpy.git`
+    - 👯 Clone this repo to your local machine using ![https://github.com/rodrez/jobpy.git](https://github.com/rodrez/jobpy.git)
 
 **Step 2**
 
@@ -95,7 +95,7 @@ Contributing
 
 **Step 3**
 
-- 🔃 Create a new pull request using `[https://github.com/rodrez/jobpy/compare/](https://github.com/rodrez/jobpy/compare/)`.
+- 🔃 Create a new pull request using ![https://github.com/rodrez/jobpy/compare/](https://github.com/rodrez/jobpy/compare/).
 
 >>>>
 
