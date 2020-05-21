@@ -1,5 +1,3 @@
-Welcome to jobpy's documentation!
-=================================
 Jobpy
 ========
 
