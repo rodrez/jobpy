@@ -69,6 +69,7 @@ Table of Contents
 - [FAQS](#FAQS)
 - [Contributing](#Contributing)
 - [Support](#Support)
+- [Docs](#Documentation)
 - [License](#License)
 
 Features
