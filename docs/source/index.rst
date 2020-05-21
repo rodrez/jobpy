@@ -104,6 +104,9 @@ Documentation
 .. automodule:: jobpy.search.cb_job_search
     :members:
 
+.. automodule:: jobpy.files.converter
+    :members:
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
