@@ -20,7 +20,8 @@ Look how easy it is to use:
    [In]: from jobpy.search import cb_job_search as cb
    [In]: jobs_in_la = cb.start_search('software developer', 'Los Angeles')
    [In]: print(jobs_la)
-   [Out]: 'software_developer_job_los_angeles.csv
+   
+   [Out]: 'software_developer_job_los_angeles.csv'
 ```
 >>>>
 
