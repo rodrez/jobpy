@@ -115,11 +115,9 @@ Contributing
 
    To get started...
 
-- Issue Tracker:
+- Issue Tracker: ![Issues](github.com/rodrez/jobpy/issues)
 
-[![Issues][https://img.shields.io/github/issues/rodrez/jobpy]][github.com/rodrez/jobpy/issues]
-
-- Source Code: ![Source][github.com/rodrez/jobpy]
+- Source Code: ![Source](github.com/rodrez/jobpy)
 
 **Step 1**
 
