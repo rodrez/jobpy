@@ -1,8 +1,3 @@
-.. jobpy documentation master file, created by
-   sphinx-quickstart on Wed May 20 21:43:19 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to jobpy's documentation!
 =================================
 Jobpy
@@ -17,27 +12,22 @@ skills required, experience, etc. It can also be used to apply to the search job
 the fetaure has not been released yet.
 
 ![GitHub version](https://badge.fury.io/gh/rodrez%2FJobs-and-Skills.svg)
-
 ![GitHub issues](https://img.shields.io/github/issues/rodrez/jobpy)
-
 ![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
 ![Python Version](https://img.shields.io/pypi/pyversions/jobpy)
 
 Look how easy it is to use:
 
->>>>
-
->>>
-[In]: from jobpy.search import cb_job_search as cb
-[In]: jobs_in_la = cb.start_search('software developer', 'Los Angeles')
-[In]: print(jobs_la)
-[Out]: 'software_developer_job_los_angeles.csv
+   [In]: from jobpy.search import cb_job_search as cb
+   [In]: jobs_in_la = cb.start_search('software developer', 'Los Angeles')
+   [In]: print(jobs_la)
+   [Out]: 'software_developer_job_los_angeles.csv
 
 >>>>
 
 Table of Contents
-_________________
+-----------------
+
 - [Installation](#Installation)
 - [Features](#Features)
 - [Contributing](#Contributing)
@@ -113,7 +103,7 @@ Support
 If you are having issues, please let us know.
 We have a mailing list located at: fabian.rodrez@gmail.com
 
-It's easier to reach to me on Twitter @Rodrez_
+It's easier to reach me on Twitter @Rodrez_
 
 License
 -------
