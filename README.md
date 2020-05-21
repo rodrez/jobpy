@@ -59,10 +59,6 @@ At the command line::
 FAQS
 ----
 
-- Issue Tracker: github.com/rodrez/jobpy/issues
-- Source Code: github.com/rodrez/jobpy
-
-
 1. How do we performed the search.
 
    - I used Scrapy, Beutiful Soup to perform the search.
@@ -82,6 +78,9 @@ Contributing
 ------------
 
    To get started...
+
+- Issue Tracker: github.com/rodrez/jobpy/issues
+- Source Code: github.com/rodrez/jobpy
 
 **Step 1**
 
