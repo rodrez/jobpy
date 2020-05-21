@@ -90,7 +90,7 @@ Features
 Installation
 ------------
 
-At the command line::
+At the command line:
 
     pip install jobpy
 
