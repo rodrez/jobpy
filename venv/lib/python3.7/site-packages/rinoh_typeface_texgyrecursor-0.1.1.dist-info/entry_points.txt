@@ -1,0 +1,3 @@
+[rinoh.typefaces]
+tex gyre cursor = rinoh_typeface_texgyrecursor:typeface
+

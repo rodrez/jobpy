@@ -4,18 +4,24 @@ from jobpy.files.converter import csv_to_md, add_to_csv, remove_duplicate_rows
 import requests
 import datetime
 
-job = 'software engineer'
-location = 'Mechanicsburg, PA'
-
 
 def grab_jobs_links(job_title: str, job_location: str):
-    """
-    Grabs the link for each job container and saves it to saved_jobs
-    Removes the sign in link to avoid signing in to the CB page.
-    :param job_title: str  desired job to be searched
-    :param job_location: str  desired location to be searched
-    :return: List of job links
-    """
+    """Return a list of job links
+
+       Parameters
+       ----------
+       job_title : str
+           Desired job title.
+
+       job_location : str
+           Desired job location
+
+       Returns
+       -------
+       saved_jobs : list
+            Collection of link from Career Builder equal or similar to the parameters given.:
+
+       """
     web = requests.get(
         f"https://www.careerbuilder.com/jobs?keywords={job_title}&location={job_location}&sort=date_desc").text
     soup = BeautifulSoup(web, 'html.parser')
@@ -35,10 +41,17 @@ def grab_jobs_links(job_title: str, job_location: str):
 
 
 def get_job_information(url: str) -> object:
-    """
-    Uses bs4 to grab the information from each job container based on the url.
-    :param url: str - career builder url of any job ("url")
-    :return: A dictionary containing Job Name, Company Name, Job Location, Description, Skills and apply link.
+    """ Uses bs4 to grab the information from each job container based on the url.
+
+    Parameters
+    ----------
+    url : str
+        Career builder url of any job
+
+    Returns
+    ------
+    job_data : dict
+        Contains Job Name, Company Name, Job Location, Description, Skills and apply link.
     """
     website = requests.get(url).text
     job_soup = BeautifulSoup(website, 'html.parser')
@@ -77,11 +90,20 @@ def get_job_information(url: str) -> object:
 # Loops through each link in saved_jobs and use the job_information function to add
 # the data to a csv file. Counter is to create an id for the items in the csv file.
 def start_search(job: str, location: str):
-    """
+    """ Initiate the job search
 
-    :param job: str Desired job title ("software engineer")
-    :param location: str Desired job location ("Silicon Valley")
-    :return:
+    Parameters
+    ----------
+    job: str
+        Desired job title ("software engineer")
+    location: str
+        Desired job location ("Silicon Valley")
+
+    Returns
+    -------
+    File
+        csv file with the name of the job title and position.
+
     """
     for jobs in grab_jobs_links(job, location):
         add_to_csv(get_job_information(jobs), "software dev jobs")
@@ -90,7 +112,7 @@ def start_search(job: str, location: str):
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print("Collecting jobs...")
-    start_search(job, location)
+    start_search("software engineer", 'Silicon Valley')
 
     print("Removing duplicates")
     remove_duplicate_rows("panda_job_data.csv")

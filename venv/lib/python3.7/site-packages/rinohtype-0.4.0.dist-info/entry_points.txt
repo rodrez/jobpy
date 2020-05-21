@@ -1,0 +1,26 @@
+[console_scripts]
+rinoh = rinoh.__main__:main
+
+[rinoh.frontends]
+CommonMark = rinoh.frontend.commonmark:CommonMarkReader
+reStructuredText = rinoh.frontend.rst:ReStructuredTextReader
+
+[rinoh.stylesheets]
+sphinx = rinoh.stylesheets:sphinx
+sphinx_article = rinoh.stylesheets:sphinx_article
+sphinx_base14 = rinoh.stylesheets:sphinx_base14
+
+[rinoh.templates]
+article = rinoh.templates:Article
+book = rinoh.templates:Book
+
+[rinoh.typefaces]
+courier = rinoh.fonts.adobe14:courier
+helvetica = rinoh.fonts.adobe14:helvetica
+itc zapfdingbats = rinoh.fonts.adobe14:zapfdingbats
+symbol = rinoh.fonts.adobe14:symbol
+times = rinoh.fonts.adobe14:times
+
+[sphinx.builders]
+rinoh = rinoh.frontend.sphinx
+

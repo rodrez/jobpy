@@ -1,0 +1,3 @@
+[rinoh.typefaces]
+tex gyre pagella = rinoh_typeface_texgyrepagella:typeface
+

@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: rinoh-typeface-texgyreheros
+Version: 0.1.1
+Summary: TeX Gyre Heros typeface
+Home-page: https://github.com/brechtm/rinoh-typeface-texgyreheros
+Author: Brecht Machiels
+Author-email: brecht@mos6581.org
+License: GUST Font License (GFL)
+Keywords: opentype font
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Text Processing :: Fonts
+Requires-Dist: rinohtype
+
+===========================
+rinoh-typeface-texgyreheros
+===========================
+
+This package provides the `TeX Gyre Heros`_ typeface for use with rinohtype_.
+TeX Gyre Heros is based on URW Nimbus Sans L and can be used as a replacement
+for Helvetica.
+
+.. _TeX Gyre Heros: http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros
+.. _rinohtype: https://github.com/brechtm/rinohtype#readme
+
+

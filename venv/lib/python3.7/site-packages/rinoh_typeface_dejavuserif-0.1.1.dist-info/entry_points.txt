@@ -1,0 +1,3 @@
+[rinoh.typefaces]
+dejavu serif = rinoh_typeface_dejavuserif:typeface
+
