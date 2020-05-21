@@ -21,10 +21,12 @@
   </a>
   <h3 align="center">Jobpy</h3>
 <br />
+  
   <p align="center">
    
   <a href="https://github.com/rodrez/jobpy/blob/master/README.md#Documentation"><strong>Explore the docs »</strong></a>
     <br />
+    .
     <a href="https://github.com/rodrez/jobpy/issues">Report Bug</a>
     ·
     <a href="https://github.com/rodrez/jobpy/issues">Request Feature</a>
