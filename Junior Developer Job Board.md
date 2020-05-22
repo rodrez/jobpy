@@ -1,3 +1,13 @@
+<!-- PROJECT IMAGE -->
+<br />
+<p align="center">
+  <a href="https://github.com/rodrez/jobpy">
+    <img src="" alt="Logo" width="200px" height="180px">
+  </a>
+  <h3 align="center">Jobpy Junior Devs Job Board</h3>
+<br />
+
+
 Job Title | Company | Location | Remote Work Option | Days Ago Posted | Application Url 
 ------------ | ------------- | ------------ | ------------ | ------------ | -----
 Junior SQL Developer | Ideal Concepts, Inc. | Allentown, PA 18109 | Remote work available | 1.0 | [Apply](https://www.indeed.com//pagead/clk?mo=r&ad=-6NYlbfkN0ADHZ79ST2xlHZymorN-Pw-JUAzmnil5xtEoO3hlNndF8sjMwaVOMVt_viALlwSbQoJc5t00DrVgqZ8KUNdqShzJzy53xFruWZ1hP5DLnEmi0w0iPXSOa6HDhuxZYX3LgRMQgO_P6hZ89VhbeUpvAw52PKVYgc9HaCuqqXnGZ6vZHjdj03mCwEtx9gdCnV_UOk4ZNko9-7JQgotWOCXTIzxIsZib0niq4ux36FgP_yhtPLwHqw26w3XMAVOnZVx6Ug1Ww8KkT7TKceweY5KUkgE6iGlVe2630xtk-Pq0OjinbXi8ZTcqhmE4CgGKuWlopSaRF8R5YNrS8x_ff6CdWi1KzKViOm3oWbc1h84ed3gXoZwHgZPiHt5K5YsaI8KYjWGPm1-flK1iSNmz0XXXvpYBXcJsWR6Fky1ggrGRv8xpoKfyeN1RgOhUOlBrpTLPhVzlOjbUPVmh3Rx8i3EHIy1&p=0&fvj=1&vjs=3)
