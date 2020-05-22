@@ -4,7 +4,7 @@
   <a href="https://github.com/rodrez/jobpy">
     <img src="jb.jpg" alt="Logo" >
   </a>
-  <h3 align="center">Jobpy Junior Devs Job Board</h3>
+  <h3 align="center" style="linear-gradient(to bottom, #33ccff 0%, #00ffff 100%)">Jobpy Junior Devs Job Board</h3>
 <br />
 
 
