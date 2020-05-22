@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/rodrez/jobpy">
-    <img src="" alt="Logo" width="200px" height="180px">
+    <img src="jb.jpg" alt="Logo" width="200px" height="180px">
   </a>
   <h3 align="center">Jobpy Junior Devs Job Board</h3>
 <br />
