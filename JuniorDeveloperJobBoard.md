@@ -6,7 +6,7 @@
   </a>
   <h3 align="center" style="linear-gradient(to bottom, #33ccff 0%, #00ffff 100%)">Jobpy Junior Devs Job Board</h3>
 <br />
-<p> This job board will be updated weekly</p>
+<p> This job board will be updated weekly last update: 05/25/2020</p>
 <br />
 Job Title | Company | Location | Remote Work Option | Days Ago Posted | Application Url 
 ------------ | ------------- | ------------ | ------------ | ------------ | -----
