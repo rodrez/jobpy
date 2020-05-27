@@ -17,7 +17,7 @@
   <p align="center">
     Welcome to jobpy!
     <br />
-    <a href="https://github.com/rodrez/jobpy/blob/master/README.md#Documentation"><strong>Explore the docs »</strong></a>
+    <a href="https://jobpy.readthedocs.io/en/latest/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     ·
