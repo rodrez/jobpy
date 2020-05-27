@@ -99,7 +99,7 @@ License
 The project is licensed under the MIT license.
 
 Documentation
-*************
+=============
 
 .. automodule:: jobpy.search.cb_job_search
     :members:
@@ -109,7 +109,7 @@ Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :titlesonly: Contents:
 
 
 
