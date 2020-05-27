@@ -135,7 +135,7 @@ Contributing
 Documentation
 -------------
 
-- Work in progress...
+- Read the documentation at https://jobpy.readthedocs.io/en/latest/
 
 
 >>>>
