@@ -93,7 +93,7 @@ FAQS
 
 1. How do we performed the search.
 
-   - I used Scrapy, Beutiful Soup to perform the search.
+   - I used Scrapy, BeatifulSoup to perform the search.
 
 2. How often does jopby gets updated?
 
