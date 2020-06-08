@@ -39,7 +39,7 @@ Jobpy
 What is Jobpy?
 --------------
 
-Jobpy is a library built with Python to pull job posting from all over the internet.
+Jobpy is a library built with Python to pull job postings from all over the internet.
 The idea behind is was to analyze the different characteristics of the job posting, like
 skills required, experience, etc. It can also be used to apply to the search jobs although
 the fetaure has not been released yet.
