@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
-from jobpy.files.converter import csv_to_md, add_to_csv, remove_duplicate_rows
+from jobpy.files.converter import add_to_csv, remove_duplicate_rows
 
+import csv
 import requests
 import datetime
 
@@ -40,7 +41,7 @@ def grab_jobs_links(job_title: str, job_location: str):
     return saved_jobs
 
 
-def get_job_information(url: str) -> object:
+def get_job_information(url):
     """ Uses bs4 to grab the information from each job container based on the url.
 
     Parameters
@@ -106,19 +107,48 @@ def start_search(job: str, location: str):
 
     """
     for jobs in grab_jobs_links(job, location):
-        add_to_csv(get_job_information(jobs), "software dev jobs")
+        add_to_csv(get_job_information(jobs), "software_dev_jobs")
 
+
+def csv_to_md(file_to_convert: str, filename: str):
+    """ Converts csv file to md table
+
+        Parameters
+        ----------
+        file_to_convert: str
+            Path or filename of the file name to convert. It does not require the extension. MUST be a csv file.
+
+        filename: str
+            Output filename desired. Does not need the extension. 
+
+        Returns
+        -------
+            Md file with a table based on the csv data provided and named after your chosen filename.
+
+        """
+
+    with open(f'{filename}.md', 'w+') as file:
+        file.write(f'Job Title | Company | Location | Description | Skills | Application Url \n'
+                   f'------------ | ------------- | ------------ | ------------ | ------------ | -----\n')
+
+    with open(f'{file_to_convert}.csv', "r", encoding="utf8")as job_details:
+        reader = csv.reader(job_details)
+        for idx, row in enumerate(reader):
+            if idx >= 0:
+                # print(idx, row)
+                with open(f'{filename}.md', 'a+') as jobs:
+                    jobs.write(f"{row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | [Apply]({row[5]})\n")
 
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print("Collecting jobs...")
     start_search("software engineer", 'Silicon Valley')
 
-    print("Removing duplicates")
-    remove_duplicate_rows("panda_job_data.csv")
+    print("Removing duplicates...")
+    remove_duplicate_rows("software_dev_jobs.csv")
 
     print("Converting data...")
-    csv_to_md("panda_job_data.csv", "tech jobs")
+    csv_to_md("software_dev_jobs", "tech jobs")
 
     print("Job collection completed")
     end_time = datetime.datetime.now()

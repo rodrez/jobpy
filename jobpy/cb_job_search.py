@@ -8,7 +8,7 @@ job = 'software engineer'
 location = 'Mechanicsburg, PA'
 
 
-def grab_jobs_links(job_title: str, job_location: str):
+def grab_jobs_links(job_title, job_location):
     """Return a list of job links
 
     Parameters
@@ -26,7 +26,7 @@ def grab_jobs_links(job_title: str, job_location: str):
 
     """
     web = requests.get(
-        f"https://www.careerbuilder.com/jobs?keywords={job_title}&location={job_location}&sort=date_desc").text
+        f'https://www.careerbuilder.com/jobs?keywords={job_title}&location={job_location}&sort=date_desc').text
     soup = BeautifulSoup(web, 'html.parser')
 
     # Career Builder sign in url. Used later to avoid signing in to grab the data.
