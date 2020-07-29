@@ -108,7 +108,7 @@ def start_search(job: str, location: str):
 
     """
     for jobs in grab_jobs_links(job, location):
-        add_to_csv(get_job_information(jobs))
+        add_to_csv(get_job_information(jobs), "software_dev_jobs")
 
 
 if __name__ == '__main__':
@@ -117,10 +117,10 @@ if __name__ == '__main__':
     start_search(job, location)
 
     print("Removing duplicates")
-    remove_duplicate_rows("panda_job_data.csv")
+    remove_duplicate_rows("software_dev_jobs.csv")
 
     print("Converting data...")
-    csv_to_md("panda_job_data.csv", "tech jobs")
+    csv_to_md("software_dev_jobs.csv", "tech jobs")
 
     print("Job collection completed")
     end_time = datetime.datetime.now()
