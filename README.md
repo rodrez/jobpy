@@ -1,9 +1,9 @@
-![Version](https://badge.fury.io/gh/rodrez%2FJobs-and-Skills.svg)
+[![PyPI version](https://badge.fury.io/py/jobpy.svg)](https://badge.fury.io/py/jobpy)
 ![Issues](https://img.shields.io/github/issues/rodrez/jobpy)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Python Version](https://img.shields.io/pypi/pyversions/jobpy)
-
-
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python3.8-1f425f.svg)](https://www.python.org/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
 
 <!-- PROJECT LOGO -->
 <br />
