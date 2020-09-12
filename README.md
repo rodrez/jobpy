@@ -1,8 +1,8 @@
 [![PyPI version](https://badge.fury.io/py/jobpy.svg)](https://badge.fury.io/py/jobpy)
 ![Issues](https://img.shields.io/github/issues/rodrez/jobpy)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![Python version](https://commons.wikimedia.org/wiki/File:Blue_Python_3.8_Shield_Badge.svg)
-
+![Python version](https://commons.wikimedia.org/wiki/File:Blue_Python_3.8_Shield_Badge.svg)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 <!-- PROJECT LOGO -->
 <br />
