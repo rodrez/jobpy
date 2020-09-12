@@ -1,2 +1,0 @@
-Job Title | Company | Location | Description | Skills | Application Url 
------------- | ------------- | ------------ | ------------ | ------------ | -----

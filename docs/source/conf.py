@@ -22,7 +22,7 @@ copyright = '2020, Rodrez'
 author = 'Rodrez'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.7'
+release = '0.0.7.2'
 
 
 # -- General configuration ---------------------------------------------------
