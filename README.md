@@ -99,7 +99,7 @@ FAQS
 2. How often does jopby gets updated?
 
    - I am currently releasing weekly updates.
-   - NOTE: I'm currently a full time employee and part time student so I spend the rest ofvmy free time coding to expand my knowledge. Help is always appreciated.
+   - NOTE: I'm currently a full time employee and full time student so I spend the rest of my free time coding to expand my knowledge. Help is always appreciated.
 
 3. Will this become something more?
 
@@ -118,10 +118,8 @@ Contributing
 
 **Step 1**
 
-- **Option 1**
-    - 🍴 Fork this repo!
-- **Option 2**
-    - 👯 Clone this repo to your local machine using ![https://github.com/rodrez/jobpy.git](https://github.com/rodrez/jobpy.git)
+- **🍴 Fork this repo!**
+- **👯 Clone this repo to your local machine going <a href="https://github.com/rodrez/jobpy.git">Here</a>**
 
 **Step 2**
 
@@ -129,14 +127,14 @@ Contributing
 
 **Step 3**
 
-- 🔃 Create a new pull request using ![https://github.com/rodrez/jobpy/compare/](https://github.com/rodrez/jobpy/compare/).
+- 🔃 Create a new pull request using <a href="https://github.com/rodrez/jobpy/compare/">Pull Request </a>
 
 >>>>
 
 
 
 <span id="documentation"></span><h1>Documentation<a class="headerlink" href="#module-jobpy.search.cb_job_search" title="Permalink to this headline">¶</a></h1>
-- Read the documentation at https://jobpy.readthedocs.io/en/latest/
+- Read the documentation at <a href="https://jobpy.readthedocs.io/en/latest/"> Read the Docs</a>
 <dl class="py function">
 <dt id="jobpy.search.cb_job_search.get_job_information">
 <code class="sig-prename descclassname">jobpy.search.cb_job_search.</code><code class="sig-name descname">get_job_information</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em><span class="sig-paren">)</span><a class="headerlink" href="#jobpy.search.cb_job_search.get_job_information" title="Permalink to this definition">¶</a></dt>
@@ -283,9 +281,9 @@ Support
 If you are having issues, please let us know.
 We have a mailing list located at: fabian.rodrez@gmail.com
 
-It's easier to reach me on Twitter @Rodrez_
+It's easier to reach me on Twitter <a href="https://twitter.com/Rodrez_">@Rodrez_ </a>
 
 License
 -------
 
-The project is licensed under the MIT license.
+The project is licensed under the <a href="https://github.com/rodrez/jobpy/blob/master/LICENSE.txt">MIT license</a>.
