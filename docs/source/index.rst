@@ -15,8 +15,8 @@ the fetaure has not been released yet.
 
 Look how easy it is to use:
 
->>> from files import converter as con
->>> from search import cb_job_search as cb
+>>> from jobpy.files import converter as con
+>>> from jobpy.search import cb_job_search as cb
 >>> 
 >>> job_data = cb.start_search("python developer", "washington")
 >>> for item in job_data:
