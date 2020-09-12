@@ -1,4 +1,5 @@
-[![PyPI version](https://badge.fury.io/py/jobpy.svg)](https://badge.fury.io/py/jobpy)![Issues](https://img.shields.io/github/issues/rodrez/jobpy)
+[![PyPI version](https://badge.fury.io/py/jobpy.svg)](https://badge.fury.io/py/jobpy)
+![Issues](https://img.shields.io/github/issues/rodrez/jobpy)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python Version](https://img.shields.io/pypi/pyversions/jobpy)
 
