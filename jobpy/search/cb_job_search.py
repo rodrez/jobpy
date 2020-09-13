@@ -57,7 +57,7 @@ def get_job_information(url):
 
     website = requests.get(url).text
     job_soup = BeautifulSoup(website, 'html.parser')
-
+    
     job_name = job_soup.select('h2.h3')[0].getText() 
     company_name = job_soup.select('.data-details > span:nth-child(1)')[0].getText()
     job_location = job_soup.select('.data-details > span:nth-child(2)')[0].getText()
