@@ -76,7 +76,12 @@ Features
 - Export to CSV or MD Table
 - Organized data
 - File converter support
+
+Future Implementations
+----------------------
+- Job/Skill Matching -> Currently working on it using spaCy
 - Apply to jobs easily
+- Job Classification
 
 >>>>
 
