@@ -124,7 +124,7 @@ Contributing
 **Step 1**
 
 - **🍴 Fork this repo!**
-- **👯 Clone this repo to your local machine going <a href="https://github.com/rodrez/jobpy.git">Here</a>**
+- **👯 Clone this repo to your local machine going <a href="https://github.com/rodrez/jobpy/archive/master.zip">Here</a>**
 
 **Step 2**
 
