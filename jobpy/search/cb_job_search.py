@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import csv
 import requests
 import datetime
+import traceback
 
 
 def grab_jobs_links(job_title: str, job_location: str):
@@ -58,9 +59,30 @@ def get_job_information(url):
     website = requests.get(url).text
     job_soup = BeautifulSoup(website, 'html.parser')
     
-    job_name = job_soup.select('h2.h3')[0].getText() 
-    company_name = job_soup.select('.data-details > span:nth-child(1)')[0].getText()
-    job_location = job_soup.select('.data-details > span:nth-child(2)')[0].getText()
+    job_name = "N/A"
+    try:
+        job_name = job_soup.select('h2.h3')[0].getText() 
+    except Exception as err:
+        print(f"The job tile could not be selected properly")
+        print(err)
+        print(f'Skipping {url}...')
+
+    company_name = "N/A"
+    try:     
+        company_name = job_soup.select('.data-details > span:nth-child(1)')[0].getText()
+    except Exception as err:
+        print(f"The company name could not be selected properly")
+        print(err)
+        print(f'Skipping {url}...')
+
+    job_location = "N/A"
+    try:
+        job_location = job_soup.select('.data-details > span:nth-child(2)')[0].getText()
+    except Exception as err:
+        print(f"The location could not be selected properly")
+        print(err)
+        print(f'Skipping {url}...')
+
 
     job_description = job_soup.select('#jdp_description > div.col-2 > div.col.big.col-mobile-full > p')
     job_description_2 = job_soup.select('#jdp_description > div:nth-child(1) > div:nth-child(1)')

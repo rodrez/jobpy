@@ -18,10 +18,12 @@ def get_programming_languages():
     COBOL
     Cascading Style Sheets
     D
+    Dart
     Delphi
     Dreamweaver
     Erlang and Elixir
     F#
+    Flutter
     FORTH
     FORTRAN
     Functional Programming
