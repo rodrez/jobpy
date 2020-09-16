@@ -1,6 +1,6 @@
     
 def get_programming_languages():   
-    
+
     p_langs = """
     ABAP
     ActionScript
@@ -20,6 +20,7 @@ def get_programming_languages():
     D
     Dart
     Delphi
+    Django
     Dreamweaver
     Erlang and Elixir
     F#
