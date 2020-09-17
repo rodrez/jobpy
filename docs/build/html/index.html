@@ -173,14 +173,13 @@ The idea behind is was to analyze the different characteristics of the job posti
 skills required, experience, etc. It can also be used to apply to the search jobs although
 the fetaure has not been released yet.</p>
 <p>Look how easy it is to use:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">files</span> <span class="kn">import</span> <span class="n">converter</span> <span class="k">as</span> <span class="n">con</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">search</span> <span class="kn">import</span> <span class="n">cb_job_search</span> <span class="k">as</span> <span class="n">cb</span>
-<span class="go">&gt;&gt;&gt;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">job_data</span> <span class="o">=</span> <span class="n">cb</span><span class="o">.</span><span class="n">start_search</span><span class="p">(</span><span class="s2">&quot;python developer&quot;</span><span class="p">,</span> <span class="s2">&quot;washington&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">job_data</span><span class="p">:</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="n">con</span><span class="o">.</span><span class="n">add_to_csv</span><span class="p">(</span><span class="n">item</span><span class="p">,</span><span class="s2">&quot;py jobs&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
+<p>from jobpy.files import converter as con
+from jobpy.search import cb_job_search as cb</p>
+<p>job_data = cb.start_search(“python developer”, “washington”)
+for item in job_data:</p>
+<blockquote>
+<div><p>con.add_to_csv(item,”py jobs”)</p>
+</div></blockquote>
 </div>
 <div class="section" id="features">
 <h1>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h1>
