@@ -17,28 +17,11 @@ def main(job, location, filename):
 # main("data science", "test")
 
 
-def create_index(filename):
 
-    jobs = cb.start_search("data science", "california")
-
-    for job in jobs[0]:
-        
-
-        job_info = f"""
-        <div class="col-sm-6 mt-8">
-            <div class="card text-white bg-primary mb-3" style="max-width: 25rem;">
-            <div class="card-header">{job["Title"]}</div>
-            <div class="card-body">
-                <h5 class="card-title">{job["Company"]}</h5>
-                <p class="card-text">{job["Location"]} </p>
-                <p class="card-text">{job["Description"][:50]}.</p>
-                <a class="btn btn-primary" href="{job["Url"]}" role="button">Read More</a>            </div>
-            </div>
-        </div>
-        
-        """
-    html = f"""
-        <!doctype html>
+def html_generator(filename, jobs):
+     
+    job_info = ""
+    index = ["""  <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -62,8 +45,9 @@ def create_index(filename):
     <div style="margin-top: 25;">
     <div class="row">
       <div style="height: 24px;"></div>
-      <!-- Block to add info -->
-      {job_info}
+      <!-- Block to add info --> """,
+      
+      """ 
       <!-- Block ends -->
       
       
@@ -77,22 +61,14 @@ def create_index(filename):
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
-        
-        """
-    
-    with open(f"{filename}.html", "w") as f:
-        f.write()
-# create_index("index")
-def html_generator():
-     
-    jobs = cb.start_search("data science", "california")
-    job_info = ""
+      """]
 
+    count = 0
     for job in jobs:
 
         job_info = f"""
         <div class="col-sm-6 mt-8">
-            <div class="card text-white bg-primary mb-3" style="max-width: 25rem;">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
             <div class="card-header">{job["Job Title"]}</div>
             <div class="card-body">
                 <h5 class="card-title">{job["Company"]}</h5>
@@ -104,6 +80,15 @@ def html_generator():
 
         
         """
-        break
-    return job_info
-print(html_generator())
+        index.insert(1, job_info)
+        count += 1
+
+      
+        if count == 5:
+              break
+    with open(f"{filename}.html", "w") as f:
+        f.write("".join(index))
+      
+
+    # return job_info
+html_generator("test")
