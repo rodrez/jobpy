@@ -3,9 +3,20 @@ from search import cb_job_search as cb
 from util import states
 
 def html_generator(filename, jobs):
+  """Generates an html job board base on the jobs dictionary. Use any of the search function for better benefits.
 
-    job_info = ""
-    index = ["""  <!doctype html>
+  Parameters
+  ----------
+  filename : [str]
+      Any name for your html file. Note that index is the most used html file name.
+  jobs : [dict]
+      A dictionary of jobs. Using cb_job_search works perfectly with these function, although, any other dictionary can be used without
+      any probrelms
+  """
+
+
+  job_info = ""
+  index = ["""  <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -47,28 +58,28 @@ def html_generator(filename, jobs):
 </html>
       """]
 
-    count = 0
-    for job in jobs:
+  count = 0
+  for job in jobs:
 
-        job_info = f"""
-        <div class="col-sm-6 mt-8">
-            <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header">{job["Job Title"]}</div>
-            <div class="card-body">
-                <h5 class="card-title">{job["Company"]}</h5>
-                <p class="card-text">{job["Location"]} </p>
-                <p class="card-text">{job["Description"][0][:200].strip()}.</p>
-                <a class="btn btn-primary" href="{job["Application Url"]}" role="button">Read More</a>            </div>
-            </div>
-        </div>
-
-        
-        """
-        index.insert(1, job_info)
-        count += 1
+      job_info = f"""
+      <div class="col-sm-6 mt-8">
+          <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
+          <div class="card-header">{job["Job Title"]}</div>
+          <div class="card-body">
+              <h5 class="card-title">{job["Company"]}</h5>
+              <p class="card-text">{job["Location"]} </p>
+              <p class="card-text">{job["Description"][0][:200].strip()}.</p>
+              <a class="btn btn-primary" href="{job["Application Url"]}" role="button">Read More</a>            </div>
+          </div>
+      </div>
 
       
-        if count == 5:
-              break
-    with open(f"{filename}.html", "w") as f:
-        f.write("".join(index))
+      """
+      index.insert(1, job_info)
+      count += 1
+
+    
+      if count == 5:
+            break
+  with open(f"{filename}.html", "w") as f:
+      f.write("".join(index))
