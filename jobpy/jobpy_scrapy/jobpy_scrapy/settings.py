@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 
+from shutil import which 
+  
+SELENIUM_DRIVER_NAME = 'firefox'
+SELENIUM_DRIVER_EXECUTABLE_PATH = which('geckodriver') 
+SELENIUM_DRIVER_ARGUMENTS=['-headless']   
 # Scrapy settings for jobpy_scrapy project
 #
 # For simplicity, this file contains only settings considered important or
@@ -52,9 +57,10 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
+DOWNLOADER_MIDDLEWARES = {
 #    'jobpy_scrapy.middlewares.JobpyScrapyDownloaderMiddleware': 543,
-#}
+'scrapy_selenium.SeleniumMiddleware': 800
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
